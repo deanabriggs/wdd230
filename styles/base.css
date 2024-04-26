@@ -1,0 +1,122 @@
+/* "*" global reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    /* change the values below to your colors from your palette */
+    --light-neutral: #fdf0d5;
+    --dark-neutral: #003049;
+    --meduim-neutral: #669bbc;
+    --dark-accent: #780000;
+    --medium-accent: #c1121f;
+}
+
+body {
+    font-family: "Laila", serif;
+    font-weight: 400;
+    background-color: var(--light-neutral);
+    min-width: 354px;
+    min-height: 100%;
+}
+
+header {
+    background-color: var(--dark-neutral);
+    color: white;
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#deana {
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px black;
+}
+
+header span {
+    padding: 15px;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: var(--dark-accent);
+    border: 2px solid black;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: var(--medium-accent);
+    border: 1px solid black;
+}
+
+.active {
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+main {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1,
+.card {
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: medium;
+    border-bottom: 1px solid black;
+}
+
+.card {
+    border: 1px solid var(--meduim-neutral);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px var(--dark-neutral);
+    background-color: white;
+    box-shadow: 5px 5px 10px var(--dark-neutral);
+}
+
+.card h2 {
+    background-color: var(--meduim-neutral);
+    text-align: center;
+    font-size: large;
+    padding: 3px;
+}
+
+.card ul {
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--dark-neutral);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: smaller;
+}
+
+#lastModified {
+    font-size: xx-small;
+    color: var(--light-neutral);
+    padding-top: 2px;
+    font-weight: 300;
+}
