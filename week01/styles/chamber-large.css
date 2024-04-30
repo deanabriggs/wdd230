@@ -1,0 +1,15 @@
+@media (min-width: 410px) {
+
+    body {
+        margin: 0 auto;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        font-size: large;
+    }
+}

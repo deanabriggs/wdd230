@@ -1,0 +1,145 @@
+/* "*" global reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    /* change the values below to your colors from your palette */
+    --light-neutral: #EDE3D9;
+    --very-dark-neutral: #16271f;
+    --dark-neutral: #374432;
+    --medium-accent: #C65859;
+    --light-accent: #f4baac;
+}
+
+body {
+    font-family: "Mooli", sans-serif;
+    background-color: var(--light-neutral);
+}
+
+h1,
+h3,
+h5 {
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h2,
+h4,
+h6 {
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    background-color: var(--medium-accent);
+    color: white;
+}
+
+header,
+footer {
+    background-color: var(--very-dark-neutral);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--light-accent);
+    color: var(--dark-neutral);
+    text-align: center;
+    border-bottom: 2px solid var(--very-dark-neutral);
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--dark-neutral);
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 10px;
+}
+
+.topics {
+    border: 1px solid var(--dark-neutral);
+    background-color: white;
+    margin: 15px;
+}
+
+.topics h2 {
+    text-align: center;
+    padding: 3px;
+}
+
+.content {
+    padding: 8px;
+}
+
+.content img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid var(--dark-neutral);
+}
+
+.content li {
+    padding: 3px;
+}
+
+#color-lt-bk {
+    background-color: var(--light-neutral);
+    border: 1px solid black;
+    padding: 2px;
+}
+
+#color-head-bk {
+    background-color: var(--very-dark-neutral);
+    border: 1px solid black;
+    padding: 2px;
+    color: white;
+}
+
+#color-win-bk {
+    background-color: var(--dark-neutral);
+    border: 1px solid black;
+    padding: 2px;
+    color: white;
+}
+
+#color-accent-dk {
+    background-color: var(--medium-accent);
+    border: 1px solid black;
+    padding: 2px;
+    color: white;
+}
+
+#color-accent-lt {
+    background-color: var(--light-accent);
+    border: 1px solid black;
+    padding: 2px;
+}
+
+#font-header {
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: x-large;
+}
+
+#font-subheader {
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: large;
+}
