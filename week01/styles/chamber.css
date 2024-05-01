@@ -97,6 +97,8 @@ main {
     margin: 0 auto;
     text-align: center;
     border: 2px solid var(--dark-neutral);
+    max-width: 100%;
+    height: auto;
 }
 
 .content li {
@@ -140,7 +142,7 @@ main {
     font-family: "Ysabeau Infant", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 #font-subheader {
@@ -148,4 +150,16 @@ main {
     font-weight: 600;
     font-style: italic;
     font-size: large;
+}
+
+#wireframes {
+    text-align: center;
+}
+
+#wireframes h3 {
+    padding: 5px;
+}
+
+#wireframes div {
+    padding-bottom: 15px;
 }
