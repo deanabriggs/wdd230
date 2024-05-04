@@ -1,19 +1,28 @@
 @media (min-width: 500px) {
 
+
     body {
         max-width: 1700px;
         margin: 0 auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
     }
 
     .parent {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 5px;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-evenly;
     }
 
     h1 {
