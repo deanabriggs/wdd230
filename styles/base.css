@@ -10,7 +10,7 @@
     /* change the values below to your colors from your palette */
     --light-neutral: #fdf0d5;
     --dark-neutral: #003049;
-    --meduim-neutral: #669bbc;
+    --medium-neutral: #669bbc;
     --dark-accent: #780000;
     --medium-accent: #c1121f;
 }
@@ -18,19 +18,20 @@
 body {
     font-family: "Laila", serif;
     font-weight: 400;
-    background-color: var(--light-neutral);
+    background: var(--light-neutral);
     min-width: 354px;
     min-height: 100%;
 }
 
 header {
-    background-color: var(--dark-neutral);
+    background: var(--dark-neutral);
     color: white;
     display: flex;
     font-size: x-large;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    position: relative;
 }
 
 #deana {
@@ -45,7 +46,7 @@ header span {
 }
 
 #menu {
-    background-color: transparent;
+    background: transparent;
     border-radius: 5px;
     color: white;
     font-size: 1.3rem;
@@ -66,7 +67,7 @@ header span {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: var(--dark-accent);
+    background: var(--dark-accent);
     border: 2px solid black;
     min-height: 2.1rem;
 }
@@ -81,7 +82,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: var(--medium-accent);
+    background: var(--medium-accent);
     border: 1px solid black;
 }
 
@@ -91,7 +92,7 @@ header span {
 
 .active {
     border: 1pt solid black;
-    background-color: #c1121f;
+    background: #c1121f;
 }
 
 .active::before {
@@ -116,31 +117,33 @@ h1 {
 }
 
 .card {
-    border: 1px solid var(--meduim-neutral);
+    border: 1px solid var(--medium-neutral);
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 3px 3px 3px var(--dark-neutral);
-    background-color: white;
+    background: white;
     box-shadow: 5px 5px 10px var(--dark-neutral);
 }
 
 .card h2 {
-    background-color: var(--meduim-neutral);
+    background: var(--medium-neutral);
     text-align: center;
     font-size: large;
     padding: 3px;
 }
 
-.card ul {
+.card ul,
+.card div {
     padding: 10px;
 }
 
 footer {
-    background-color: var(--dark-neutral);
+    background: var(--dark-neutral);
     color: white;
     text-align: center;
     padding: 15px;
     font-size: smaller;
+    border-top: 1px solid var(--medium-accent);
+    ;
 }
 
 #lastModified {
@@ -148,4 +151,14 @@ footer {
     color: var(--light-neutral);
     padding-top: 2px;
     font-weight: 300;
+}
+
+#drkMode {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: var(--light-neutral);
+    border-radius: 50%;
 }
