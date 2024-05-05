@@ -68,7 +68,8 @@ header span {
     flex-direction: column;
     list-style: none;
     background: var(--dark-accent);
-    border: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     min-height: 2.1rem;
 }
 
@@ -97,6 +98,7 @@ header span {
 
 .active::before {
     content: "😏 ";
+    font-size: .6rem;
 }
 
 main {

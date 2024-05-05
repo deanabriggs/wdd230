@@ -1,11 +1,11 @@
-const modeBtn = document.querySelector('#drkMode');
-const body = document.querySelector('body');
-const title = document.querySelector("h1", "h2");
+const modeBtn = document.querySelector("#drkMode");
+const body = document.querySelector("body");
+const title = document.querySelector("h1");
 const cards = document.querySelectorAll(".card");
-const footer = document.querySelector('footer');
+const footer = document.querySelector("footer");
 
 modeBtn.addEventListener("click", () => {
-    if (modeBtn.textContent.includes('🕶️')) {
+    if (modeBtn.textContent.includes("🕶️")) {
         body.style.background = "black";
         title.style.color = "white";
         title.style.borderBottomColor = "white";
@@ -16,8 +16,7 @@ modeBtn.addEventListener("click", () => {
         modeBtn.textContent = "💡";
         modeBtn.style.background = "transparent";
         modeBtn.style.border = "none";
-    }
-    else {
+    } else {
         body.style.background = "var(--light-neutral)";
         body.style.color = "black";
         title.style.color = "black";
@@ -31,4 +30,3 @@ modeBtn.addEventListener("click", () => {
         modeBtn.style.border = "1px solid black";
     }
 })
-
