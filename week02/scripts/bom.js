@@ -10,10 +10,11 @@ button.addEventListener("click", () => {
         deleteButton.textContent = "❌";
 
         deleteButton.style.border = "none";
-        deleteButton.style.background = "transparent";
+        deleteButton.style.backgroundColor = "transparent";
+        deleteButton.ariaLabel = "Remove";
 
         li.append(deleteButton);
-        list.appendChild(li);
+        list.append(li);
 
         deleteButton.addEventListener('click', () => {
             list.removeChild(li);
