@@ -75,6 +75,7 @@ header span {
 
 .navigation a {
     display: none;
+    flex: 1 1 100%;
     text-align: center;
     color: white;
     text-decoration: none;

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Roseville Chamber</title>
+    <meta name="description" content="Home page for the City of Roseville Chamber of Commerce">
+    <meta name="author" content="Deana Briggs">
+    <!--Social Media Content-->
+    <meta property="og:title" content="WDD230 Assignment Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/News/CivicCenter770x540.jpg">
+    <meta property="og:url" content="https://deanabriggs.github.io/wdd230/">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Ysabeau+Infant:ital,wght@0,600;1,800&display=swap"
+        rel="stylesheet">
+    <!--CSS styles-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <!--Icons-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Roseville <br>Chamber of Commerce</h1>
+    </header>
+    <button aria-label="menu" id="menu"></button>
+    <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#">Discover</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+    </nav>
+    <main>
+        <div id="hero">
+            <img src="images/roseville-roses.webp" alt="Roseville Civic Center with roses">
+        </div>
+        <div class="action">
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </div>
+        <section class="info">
+            <h2>Community Information</h2>
+            <img src="#" alt="some event picture">
+            <div>
+                <h3>Event Details</h3>
+                <p>Some specific information about the next upcoming event that includes details that will encourage
+                    people to
+                    participate. It could include ways this will promote business networking and enrich the community.
+                </p>
+            </div>
+            <div class="events">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li>5th - Cinco de mayo Festival</li>
+                    <li>8th - Wine Down Wednesday</li>
+                    <li>9th - Food Truck Mania</li>
+                    <li>10th - Campfire & History</li>
+                    <li>10th - Rock Art Mysteries Tour</li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="#" alt="current weather with picture">
+        </section>
+        <section class="spotlight">
+            <h2>Spotlight Advertisement</h2>
+            <img src="#" alt="picture of business or logo">
+            <div>
+                <h3>Name of Business</h3>
+                <p>Advertisement of some sort that would be appealing to viewers. Could include recognition or recent
+                    business event. Should include location and contact info.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span>Deana Briggs</span> &bull;
+            <span>Project for WDD230 Class</span>
+        </p>
+        <p id="contact">916-770-5211 <br> deanambriggs@gmail.com </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+</body>
+
+</html>
