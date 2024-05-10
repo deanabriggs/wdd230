@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="description" content="Responsive Images practice assignment">
+    <meta name="author" content="Deana Briggs">
+
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Images</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/temple-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/temple-medium.webp">
+                <img src="images/temple-large.webp" alt="temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>Deana Briggs &bull; WDD230 Responsive Images Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
