@@ -16,7 +16,7 @@ modeBtn.addEventListener("click", () => {
         });
         map.style.boxShadow = "3px 3px 8px var(--medium-neutral)";
         modeBtn.textContent = "💡";
-        modeBtn.style.background = "transparent";
+        modeBtn.style.background = "var(--dark-neutral)";
         modeBtn.style.border = "none";
     } else {
         body.style.background = "var(--light-neutral)";
