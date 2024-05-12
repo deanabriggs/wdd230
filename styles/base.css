@@ -211,7 +211,7 @@ footer {
 }
 
 #lastModified {
-    font-size: x-small;
+    font-size: small;
     color: var(--light-neutral);
     padding-top: 5px;
     font-weight: 300;
