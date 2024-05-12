@@ -1,7 +1,7 @@
-@media (min-width: 500px) {
+@media (min-width: 400px) {
 
     body {
-        max-width: 1700px;
+        max-width: 1260px;
         margin: 0 auto;
     }
 
@@ -26,5 +26,12 @@
 
     h1 {
         font-size: large;
+    }
+
+    #hero-label {
+        top: 10%;
+        left: 5%;
+        padding: 1.2rem;
+        font-size: 1rem;
     }
 }

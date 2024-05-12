@@ -3,6 +3,7 @@ const body = document.querySelector("body");
 const title = document.querySelector("h1");
 const cards = document.querySelectorAll(".card");
 const footer = document.querySelector("footer");
+const map = document.querySelector(".map");
 
 modeBtn.addEventListener("click", () => {
     if (modeBtn.textContent.includes("🕶️")) {
@@ -13,6 +14,7 @@ modeBtn.addEventListener("click", () => {
             card.style.background = "var(--light-neutral)";
             card.style.boxShadow = "3px 3px 8px var(--medium-neutral)";
         });
+        map.style.boxShadow = "3px 3px 8px var(--medium-neutral)";
         modeBtn.textContent = "💡";
         modeBtn.style.background = "transparent";
         modeBtn.style.border = "none";
