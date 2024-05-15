@@ -31,7 +31,8 @@ h3 {
     text-decoration-line: underline;
 }
 
-h2 {
+h2,
+#discover-main .visits {
     font-family: "Ysabeau Infant", sans-serif;
     font-weight: 600;
     font-style: italic;
@@ -192,4 +193,28 @@ footer {
 
 #contact {
     padding: 20px;
+}
+
+/* Discover Page Adjustments */
+aside {
+    background: var(--light-neutral);
+    padding: 20px;
+}
+
+aside li {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 2px;
+}
+
+aside p {
+    padding: 2px;
+}
+
+.discover-pics img {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 50px 30px 30px 50px;
 }

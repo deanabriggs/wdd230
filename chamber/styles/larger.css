@@ -9,7 +9,7 @@
         min-height: 4rem;
     }
 
-    header h1 {
+    #hero-header {
         display: block;
         width: 100%;
         padding: 10px;
@@ -67,4 +67,15 @@
         z-index: 0;
     }
 
+    /* Discover Page Adjustments */
+    #discover-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .discover-pics img:hover {
+        padding: 0px;
+        border: 4px solid var(--dark-neutral);
+        cursor: pointer;
+    }
 }

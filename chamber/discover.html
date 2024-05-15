@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover-Roseville Chamber of Commerce</title>
+    <meta name="description" content="Home page for the City of Roseville Chamber of Commerce">
+    <meta name="author" content="Deana Briggs">
+    <!--Social Media Content-->
+    <meta property="og:title" content="WDD230 Assignment Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/News/CivicCenter770x540.jpg">
+    <meta property="og:url" content="https://deanabriggs.github.io/wdd230/">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Ysabeau+Infant:ital,wght@0,600;1,800&display=swap"
+        rel="stylesheet">
+    <!--CSS styles-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <!--Icons-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Roseville <br>Chamber of Commerce</h1>
+    </header>
+    <button aria-label="menu" id="menu"></button>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="#">Discover</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+    </nav>
+
+    <main id="discover-main">
+        <aside>
+            <p class="visits"></p>
+            <section>
+                <h3>Informaiton</h3>
+                <p>Population: 148,879</p>
+                <p>Elevation: 164 ft (50 m)</p>
+                <p>Incorporated: April 10, 1909</p>
+            </section>
+            <section>
+                <h3>Historical Landmarks</h3>
+                <ul>
+                    <li>Benito Juarez Monument</li>
+                    <li>Steam Engine No.2252</li>
+                    <li>Transcontinental Railroad Monument</li>
+                    <li>Railroad Worker's Memorial</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Family Entertainment</h3>
+                <ul>
+                    <li>Placer County Fair</li>
+                    <li>Goldland Sunsplash</li>
+                    <li>Top Golf</li>
+                    <li>Round1 Bowling & Arcade</li>
+                    <li>Xtreme Craze</li>
+                    <li>Wacky Tacky</li>
+                    <li>Incredible John's Pizza</li>
+                </ul>
+            </section>
+        </aside>
+        <div class="discover-pics">
+            <img src="images/train.webp" alt="steam engine monument" loading="lazy" width="600" height="375">
+            <img src="images/transcontinental.webp" alt="transcontinental monument" loading="lazy" width="600"
+                height="375">
+            <img src="images/sunsplash.webp" alt="sunsplash" loading="lazy" width="600" height="375">
+            <img src="images/topgolf.webp" alt="top golf" loading="lazy" width="600" height="375">
+            <img src="images/bowling.webp" alt="round1 bowling" loading="lazy" width="600" height="375">
+            <img src="images/xtreme.webp" alt="xtreme craze" loading="lazy" width="600" height="292">
+            <img src="images/wacky.webp" alt="wacky tacky" loading="lazy" width="600" height="375">
+            <img src="images/pizza.webp" alt="Incredible john's pizza" loading="lazy" width="600" height="375">
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span>Deana Briggs</span> &bull;
+            <span>Project for WDD230 Class</span>
+        </p>
+        <p id="contact">916-770-5211 <br> deanambriggs@gmail.com </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+</body>
+
+</html>
