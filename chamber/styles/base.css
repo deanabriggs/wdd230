@@ -215,6 +215,5 @@ aside p {
     display: block;
     width: 100%;
     height: auto;
-    overflow: hidden;
-    padding: 50px 30px 30px 50px;
+    margin: 25px 0px;
 }
