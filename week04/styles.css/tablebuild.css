@@ -1,0 +1,58 @@
+:root {
+    --thead-background: black;
+    --tcol-background: rgb(88, 82, 82);
+    --zebra: hsl(0, 0%, 92%, 1);
+
+    --light-neutral: #fdf0d5;
+    --dark-neutral: #003049;
+    --medium-neutral: #669bbc;
+    --dark-accent: #780000;
+    --medium-accent: #c1121f;
+}
+
+body {
+    font-family: "Laila", serif;
+    font-weight: 400;
+    background: var(--light-neutral);
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background: var(--thead-background);
+    color: white;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: .80rem;
+    color: black;
+    padding: 5px;
+}
+
+th,
+td:nth-child(1) {
+    padding: 5px 10px;
+}
+
+td {
+    border: 1px solid var(--medium-neutral);
+    color: black;
+}
+
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4) {
+    background-color: var(--dark-neutral);
+}
+
+tbody tr:nth-child(even) {
+    background: var(--zebra);
+}
+
+tbody tr:nth-child(odd) {
+    background: white;
+}
