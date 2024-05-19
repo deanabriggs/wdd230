@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 10px;
     max-width: 450px;
+    background-color: var(--light-neutral);
 }
 
 .fmRate fieldset {

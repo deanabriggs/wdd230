@@ -1,9 +1,10 @@
-const modeBtn = document.querySelector("#drkMode");
+const modeBtn = document.querySelector(".drkMode");
 const body = document.querySelector("body");
 const title = document.querySelector("h1");
 const cards = document.querySelectorAll(".card");
 const footer = document.querySelector("footer");
 const map = document.querySelector(".map");
+const form = document.querySelector("form");
 
 modeBtn.addEventListener("click", () => {
     if (modeBtn.textContent.includes("🕶️")) {
