@@ -1,0 +1,82 @@
+.fmRate {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 450px;
+}
+
+.fmRate fieldset {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: 1.5px dotted var(--medium-neutral);
+    border-radius: 5px;
+}
+
+.fmRate legend {
+    margin-left: 1rem;
+    padding: 5px 10px;
+    border: 1.5px dotted var(--medium-neutral);
+    border-radius: 5px;
+    color: var(--dark-neutral);
+    font-weight: 600;
+    box-shadow: 2px 2px 4px var(--medium-neutral);
+}
+
+.fmRate label {
+    color: var(--medium-accent);
+}
+
+.fmRate input {
+    display: block;
+    min-height: 44px;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: .5px solid var(--dark-neutral);
+    border-radius: 5px;
+}
+
+#confoMsg {
+    display: block;
+    color: yellow;
+    margin-top: 2px;
+    margin-bottom: 1rem;
+    background-color: black;
+    font-weight: 500;
+}
+
+#rangevalues {
+    background-color: white;
+}
+
+.fmRate div {
+    text-align: center;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+#rating {
+    font-size: medium;
+}
+
+input[type="submit"] {
+    margin: 2rem 2% 0rem 2%;
+    width: 96%;
+    border: none;
+    border-radius: 5px;
+    background-image: radial-gradient(var(--medium-accent), var(--dark-accent));
+    color: white;
+    box-shadow: 5px 5px 10px var(--dark-neutral);
+}
+
+#msgReceived {
+    max-width: 500px;
+    border: 2px dotted var(--dark-neutral);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5em auto;
+}
+
+#msgReceived p {
+    margin-top: 1rem;
+}

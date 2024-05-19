@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <meta name="description" content="Exercise in designing a form">
+    <meta name="author" content="Deana Briggs">
+
+    <meta property="og:title" content="WDD230 Assignment Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://s3-media0.fl.yelpcdn.com/bphoto/sK3sR0uy41KAZe-No8VD4w/1000s.jpg">
+    <meta property="og:url" content="https://deanabriggs.github.io/wdd230/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div id="drkMode">🕶️</div>
+        <img id="deana" src="images/me.webp" alt="picture of Deana" width="100" height="154">
+        <span>Deana Briggs</span>
+    </header>
+    <button aria-label="menu" id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a class="active" href="form.html">Form</a>
+    </nav>
+
+    <main>
+        <h1>Rate This Webpage</h1>
+        <form method="get" action="record.html" class="fmRate">
+
+            <fieldset>
+                <legend>Create a Profile</legend>
+                <label>Username* <input id="username" type="text" name="username" required></label>
+                <label>Password* <input id="password" type="password" name="password" required pattern="[a-zA-Z0-9]{8,}"
+                        title="Password must have: Minimum of (8) characters & NO special characters (letters & numbers only)"></label>
+                <label>Confirm Password* <input id="confo" type="password" name="confo" required
+                        title="Confirmation doesn't match the password"></label>
+                <div id="confoMsg"></div>
+                <label>Email* <input id="email" type="email" name="email" required
+                        pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Opinion</legend>
+                <label>Page Rating <input id="range" type="range" name="range" min="0" max="10" value="0" step="1"
+                        list="rangevalues"></label>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <div>Rating Selected: <span id="rating">0</span></div>
+            </fieldset>
+
+            <input type="submit" value="Share Your Opinion">
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> &bull; Deana Briggs &bull; California, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/dark.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+    <script src="scripts/formValidation.js"></script>
+</body>
+
+</html>
