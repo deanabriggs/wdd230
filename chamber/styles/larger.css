@@ -9,17 +9,6 @@
         min-height: 4rem;
     }
 
-    #hero-header {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        position: absolute;
-        top: 12rem;
-        z-index: 1;
-        font-size: 5em;
-        max-width: 1400px;
-    }
-
     .nav {
         flex-direction: row;
     }
@@ -28,12 +17,15 @@
         display: block;
     }
 
-    #hero img {
-        min-height: 400PX;
+    .action {
+        margin-top: -22rem;
+        margin-bottom: 16rem;
     }
 
-    .action {
-        display: block;
+    #join {
+        width: 200px;
+        padding: 15px;
+        font-size: larger;
     }
 
     .info,
@@ -60,11 +52,6 @@
 
     #menu {
         display: none;
-    }
-
-    #hero img {
-        opacity: 55%;
-        z-index: 0;
     }
 
     /* Discover Page Adjustments */
