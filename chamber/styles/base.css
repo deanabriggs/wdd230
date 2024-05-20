@@ -135,16 +135,18 @@ header h1 {
     text-align: center;
 }
 
-#join {
+#join,
+input[type="submit"] {
     display: inline;
     background-image: radial-gradient(var(--light-accent), var(--medium-accent));
-    box-shadow: 4px 4px 4px black;
-    border: 1px solid var(--dark-neutral);
+    box-shadow: 2px 4px 4px black;
+    border: none;
     border-radius: 25px;
     width: 150px;
     padding: 10px;
     text-align: center;
     font-size: medium;
+    font-weight: 600;
     cursor: pointer;
     color: black;
 }
@@ -236,6 +238,11 @@ aside p {
 
 /* -------------Join Page Adjustments------------- */
 
+.pgJoin h2 {
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0;
+}
+
 .fmJoin {
     display: block;
     margin: 0 auto;
@@ -247,6 +254,21 @@ aside p {
     padding: 1.5rem;
     padding-bottom: .5rem;
     margin-top: 2rem;
+    border-radius: 5px;
+    background-color: var(--light-neutral);
+    border-color: var(--dark-neutral);
+}
+
+.fmJoin fieldset:first-child {
+    margin-top: 1rem;
+}
+
+.fmJoin legend {
+    background-color: var(--dark-neutral);
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    color: white;
+    font-weight: 400s;
 }
 
 .fmJoin input[type=text],
@@ -264,23 +286,35 @@ aside p {
     font-size: 110%;
 }
 
-.fmJoin legend {
-    padding: 5px;
+#membership div {
+    display: block;
+    border-bottom: .5px solid black;
 }
 
 #membership label:not(:last-of-type) {
     display: flex;
     align-items: center;
     min-height: 44px;
+    margin-bottom: 5px;
+}
+
+#membership span {
+    padding: 7px;
+    font-weight: 600;
 }
 
 .fmJoin input[name="member"] {
     margin-right: 6px;
-    border: 1px solid red;
+    accent-color: var(--medium-accent);
 }
 
 .fmJoin input[type="submit"] {
     width: 90%;
     margin: 2rem 5%;
     padding: 10px;
+}
+
+input::placeholder {
+    color: var(--light-accent);
+    font-weight: 400;
 }

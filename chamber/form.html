@@ -26,7 +26,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="pgJoin">
     <header>
         <h1>Roseville <br>Chamber of Commerce</h1>
     </header>
@@ -44,10 +44,12 @@
                 <legend>Primary Contact</legend>
                 <label>First Name* <input type="text" name="fname" id="fname" required></label>
                 <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                <label>Title or Position <input type="text" name="title" id="title" pattern="[a-zA-Z-\s]{7,}"></label>
+                <label>Title or Position <input type="text" name="title" id="title" pattern="[a-zA-Z-\s]{7,}"
+                        title="Must be at least (7) characters and contain only letters, spaces, and hyphens (-)"></label>
                 <label>Email* <input type="email" name="email" id="email" required
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9]+.[a-zA-Z]" placeholder="example@gmail.com"></label>
-                <label>Mobile Phone Number* <input type="tel" name="phone" id="phone" required></label>
+                        placeholder="example@gmail.com"></label>
+                <label>Mobile Phone Number* <input type="tel" name="phone" id="phone" required
+                        placeholder="9165551234"></label>
             </fieldset>
 
             <fieldset>
@@ -57,18 +59,22 @@
             </fieldset>
 
             <fieldset id="membership">
-                <legend>Choose Membership Type</legend>
-                <label><input type="radio" name="member" id="np" value="yes"> NP Membership (non-profit
-                    organizations) $0</label>
-                <label><input type="radio" name="member" id="bronze" value="yes"> Bronze Membership $100</label>
-                <label><input type="radio" name="member" id="silver" value="yes"> Silver Membership $200</label>
-                <label><input type="radio" name="member" id="gold" value="yes"> Gold Membership $300</label>
-                <label><input type="hidden" type="datetime" name="timestamp" id="timestamp"></label>
+                <legend>Membership Type</legend>
+                <div>Choose Membership Level</div>
+                <label><input type="radio" name="member" id="np" value="np"> NP Membership (non-profit
+                    organizations) <span class="cost"> $0</span></label>
+                <label><input type="radio" name="member" id="bronze" value="bronze"> Bronze Membership <span
+                        class="cost">
+                        $100</span></label>
+                <label><input type="radio" name="member" id="silver" value="silver"> Silver Membership <span
+                        class="cost">
+                        $200</span></label>
+                <label><input type="radio" name="member" id="gold" value="gold"> Gold Membership <span class="cost">
+                        $300</span></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
             </fieldset>
             <input type="submit" value="Apply for Membership">
         </form>
-
-
 
     </main>
     <footer>
