@@ -198,7 +198,7 @@ footer {
     padding: 20px;
 }
 
-/* Discover Page Adjustments */
+/* -------------Discover Page Adjustments------------- */
 aside {
     background: var(--light-neutral);
     padding: 20px;
@@ -232,4 +232,55 @@ aside p {
     font-size: larger;
     padding: 10px;
     opacity: 80%;
+}
+
+/* -------------Join Page Adjustments------------- */
+
+.fmJoin {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 500px;
+}
+
+.fmJoin fieldset {
+    padding: 1.5rem;
+    padding-bottom: .5rem;
+    margin-top: 2rem;
+}
+
+.fmJoin input[type=text],
+.fmJoin input[type=email],
+.fmJoin input[type=tel],
+.fmJoin input[type=email],
+.fmJoin textarea {
+    display: block;
+    min-height: 44px;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 8px;
+    color: var(--medium-accent);
+    font-weight: 600;
+    font-size: 110%;
+}
+
+.fmJoin legend {
+    padding: 5px;
+}
+
+#membership label:not(:last-of-type) {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+}
+
+.fmJoin input[name="member"] {
+    margin-right: 6px;
+    border: 1px solid red;
+}
+
+.fmJoin input[type="submit"] {
+    width: 90%;
+    margin: 2rem 5%;
+    padding: 10px;
 }
