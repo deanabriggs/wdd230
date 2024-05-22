@@ -8,6 +8,7 @@
 
 :root {
     --light-neutral: #EDE3D9;
+    --light-neutral-rgb: 237, 227, 217;
     --very-dark-neutral: #16271f;
     --dark-neutral: #374432;
     --medium-accent: #C65859;
@@ -330,4 +331,8 @@ input::placeholder {
 
 .thankyou p {
     margin: 1rem;
+}
+
+#asideJoin {
+    display: none;
 }
