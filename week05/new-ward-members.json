@@ -1,0 +1,23 @@
+{
+    "familyName": "Briggs",
+    "arriveDate": "2024-05-21",
+    "numOfPeople": 3,
+    "bishipVisit": true,
+    "individuals": [
+        {
+            "name": "Jon Briggs",
+            "gender": "M",
+            "dob": "1965-05-03"
+        },
+        {
+            "name": "Deana Briggs",
+            "gender": "F",
+            "dob": "1978-02-10"
+        },
+        {
+            "name": "Jenna Briggs",
+            "gender": "F",
+            "dob": "2004-03-10"
+        }
+    ]
+}
