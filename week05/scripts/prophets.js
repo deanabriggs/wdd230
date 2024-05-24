@@ -30,10 +30,14 @@ const displayProphets = (prophets) => {
         // create elements to add to the document div.cards element
         let card = document.createElement("section");
         let fullName = document.createElement("h2");
+        let dob = document.createElement("p");
+        let place = document.createElement("p");
         let portrait = document.createElement("img");
 
         // build the content out to show the prophet's full name
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        dob.textContent = `Date of Birth: ${prophet.birthdate}`;
+        place.textContent = `Place of Birth: ${prophet.birthplace}`;
 
         // build the image portrait by setting all the relevant attributes
         portrait.setAttribute("src", prophet.imageurl);
@@ -44,13 +48,13 @@ const displayProphets = (prophets) => {
 
         // append the h2 and img for each card, to "section" for each individual card with the created elements
         card.appendChild(fullName);
+        card.appendChild(dob);
+        card.appendChild(place);
         card.appendChild(portrait);
 
         // add the cards to the documents
         cards.appendChild(card);
 
-        // append the collective cards to the 
-        cards.appendChild(card);
     });
 }
 
