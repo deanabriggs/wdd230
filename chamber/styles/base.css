@@ -333,5 +333,20 @@ input::placeholder {
 }
 
 #asideJoin {
-    display: none;
+    display: block;
+    background: rgba(var(--light-neutral-rgb), 0.4);
+    border: 1px solid var(--light-neutral);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#asideJoin div {
+    padding: 1rem 2rem;
+}
+
+#asideJoin h3 {
+    color: var(--medium-accent);
+    font-weight: 600;
+    font-size: 140%;
+    padding: .5rem 2rem;
 }
