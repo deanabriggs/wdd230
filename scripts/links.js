@@ -1,6 +1,6 @@
 const baseURL = "https://deanabriggs.github.io/wdd230/";
 const linksURL = "https://deanabriggs.github.io/wdd230/data/links.json";
-const assignments = document.querySelector("#assignments");
+
 
 async function getLinks() {
     try {
@@ -20,19 +20,47 @@ async function getLinks() {
 
 const displayLinks = (weeks) => {
 
-    weeks.forEach((weekSet) => {
-        let weekName = document.createElement("li");
-        weekName.textContent = weekSet.week;
+    const activities = document.querySelector("#activities");
 
-        links.forEach((linkSet) => {
-            let link = document.createElement("a");
-            link.textContent = linkSet.title;
-            link.href = linkSet.url;
-            weekName.appendChild(link);
+    const table = document.createElement("table");
+
+    const caption = document.createElement("caption");
+    caption.textContent = "Learning Activities";
+    caption.style.display = "block";
+    table.appendChild(caption);
+
+    const thead = document.createElement("thead");
+    const tc1 = document.createElement("tc");
+
+    weeks.forEach(weekName => {
+        const th = document.createElement("th");
+        th.setAttribute("scope", "col");
+        th.textContent = weekName.week;
+        tc1.appendChild(th);
+    });
+
+    thead.appendChild(tc1);
+    table.appendChild(thead);
+
+    const tbody = document.createElement("tbody");
+
+    weeks.forEach(week => {
+        const tr = document.createElement("tr");
+
+        week.links.forEach(link => {
+            const td = document.createElement("td");
+            const a = document.createElement("a");
+            a.href = link.url;
+            a.textContent = link.title;
+            td.appendChild(a);
+            tr.appendChild(td);
         })
 
-        assignments.appendChild(weekName);
+        tbody.appendChild(tr);
     })
+
+    table.appendChild(tbody);
+    activities.appendChild(table);
 }
 
 getLinks();
