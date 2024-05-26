@@ -187,6 +187,38 @@ li a {
     margin-top: 10px;
 }
 
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+figcaption {
+    display: inline-block;
+    font-weight: 120%;
+    padding: 15px 5px 0px 5px;
+}
+
+figure span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: large;
+    padding: 15px 5px 0px 5px;
+}
+
+figure img {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1px;
+}
+
+figcaption::before {
+    content: " - ";
+}
+
 .visits {
     font-weight: 600;
 }
