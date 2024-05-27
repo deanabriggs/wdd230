@@ -169,6 +169,7 @@ h1 {
     text-align: center;
     font-size: large;
     padding: 3px;
+    font-weight: bold;
 }
 
 .card ul,
@@ -206,13 +207,13 @@ figure span {
     display: inline-block;
     font-weight: bold;
     font-size: large;
-    padding: 15px 5px 0px 5px;
+    padding: 15px 0px 0px 0px;
 }
 
 figure img {
     display: inline-block;
     margin-top: 1rem;
-    padding: 1px;
+    padding: 0;
 }
 
 figcaption::before {
@@ -251,4 +252,8 @@ footer {
     color: var(--light-neutral);
     padding-top: 5px;
     font-weight: 300;
+}
+
+.card {
+    min-width: 210px;
 }
