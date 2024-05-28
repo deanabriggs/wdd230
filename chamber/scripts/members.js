@@ -48,6 +48,7 @@ const displayMembers = (members) => {
         membership.textContent = `Membership: ${member.membership}`;
         category.textContent = `Category: ${member.category}`;
 
+        // define logo image attributes
         logo.setAttribute("src", member.img);
         logo.setAttribute("alt", `Logo for ${member.business}`);
         logo.setAttribute("loading", "lazy");
@@ -62,6 +63,7 @@ const displayMembers = (members) => {
         card.appendChild(business);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(document.createElement("br"));
         card.appendChild(email);
         card.appendChild(membership);
         card.appendChild(category);
