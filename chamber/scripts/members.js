@@ -28,7 +28,8 @@ const displayMembers = (members) => {
         const business = document.createElement("h3");
         const address = document.createElement("address");
         const street = document.createElement("p");
-        const csz = document.createElement('p');
+        const csz = document.createElement("p");
+        const website = document.createElement("a");
         const phone = document.createElement("a");
         const email = document.createElement("a");
         const logo = document.createElement("img");
@@ -41,8 +42,10 @@ const displayMembers = (members) => {
         street.textContent = member.address.street;
         let compoundCSZ = `${member.address.city}, ${member.address.state} ${member.address.zip}`;
         csz.textContent = compoundCSZ;
+        website.setAttribute = ("href", member.website);
+        website.textContent = "Go to website";
         phone.setAttribute("href", `tel:${member.phone}`);
-        phone.textContent = member.phone;
+        phone.textContent = member.phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
         email.setAttribute("href", `mailto:${member.email}`);
         email.textContent = member.email;
         membership.textContent = `Membership: ${member.membership}`;
@@ -52,16 +55,18 @@ const displayMembers = (members) => {
         logo.setAttribute("src", member.img);
         logo.setAttribute("alt", `Logo for ${member.business}`);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "200");
-        logo.setAttribute("height", "100");
+        logo.setAttribute("width", "350");
+        logo.setAttribute("height", "450");
 
         // append elements to the document
         address.appendChild(street);
         address.appendChild(csz);
 
-        card.appendChild(logo);
         card.appendChild(business);
+        card.appendChild(logo);
         card.appendChild(address);
+        card.appendChild(website);
+        card.appendChild(document.createElement("br"));
         card.appendChild(phone);
         card.appendChild(document.createElement("br"));
         card.appendChild(email);

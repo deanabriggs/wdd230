@@ -350,3 +350,19 @@ input::placeholder {
     font-size: 140%;
     padding: .5rem 2rem;
 }
+
+/* ------------ Directory --------------- */
+
+#members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+#members .card {
+    border: 1px solid var(--very-dark-neutral);
+    display: inline-block;
+    padding: 20px;
+    margin: 15px;
+    background-color: rgba(var(--light-neutral-rgb), 0.6);
+    border-radius: 5px;
+}
