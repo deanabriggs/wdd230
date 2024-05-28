@@ -1,6 +1,5 @@
 const baseURL = "https://deanabriggs.github.io/wdd230/chamber/";
 const membersURL = "https://deanabriggs.github.io/wdd230/chamber/data/members.json";
-
 const docMembers = document.querySelector("#members");
 
 async function getMembers() {
@@ -42,12 +41,12 @@ const displayMembers = (members) => {
         street.textContent = member.address.street;
         let compoundCSZ = `${member.address.city}, ${member.address.state} ${member.address.zip}`;
         csz.textContent = compoundCSZ;
-        website.setAttribute = ("href", member.website);
-        website.textContent = "Go to website";
         phone.setAttribute("href", `tel:${member.phone}`);
         phone.textContent = member.phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
         email.setAttribute("href", `mailto:${member.email}`);
         email.textContent = member.email;
+        website.setAttribute("href", member.website);
+        website.textContent = "Go to website";
         membership.textContent = `Membership: ${member.membership}`;
         category.textContent = `Category: ${member.category}`;
 
@@ -63,19 +62,38 @@ const displayMembers = (members) => {
         address.appendChild(csz);
 
         card.appendChild(business);
+        card.appendChild(document.createElement("br"));
         card.appendChild(logo);
+        card.appendChild(document.createElement("br"));
         card.appendChild(address);
-        card.appendChild(website);
         card.appendChild(document.createElement("br"));
         card.appendChild(phone);
         card.appendChild(document.createElement("br"));
+        card.appendChild(website);
+        card.appendChild(document.createElement("br"));
         card.appendChild(email);
+        card.appendChild(document.createElement("br"));
         card.appendChild(membership);
+        card.appendChild(document.createElement("br"));
         card.appendChild(category);
 
         docMembers.appendChild(card);
 
     });
 }
-
 getMembers();
+
+// grid vs list functionality
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+gridButton.addEventListener("click", () => {
+    docMembers.classList.add("grid");
+    docMembers.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    docMembers.classList.add("list");
+    docMembers.classList.remove("grid");
+});
