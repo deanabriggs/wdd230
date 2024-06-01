@@ -19,7 +19,7 @@
 
     .action {
         margin-top: -22rem;
-        margin-bottom: 16rem;
+        margin-bottom: 17.4rem;
     }
 
     #join {
@@ -27,6 +27,7 @@
         padding: 15px;
         font-size: larger;
     }
+
 
     .info,
     .spotlight {
@@ -43,11 +44,6 @@
 
     .spotlight div {
         grid-column: 2 / 4;
-    }
-
-    main section {
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
 
     #menu {

@@ -131,7 +131,7 @@ header h1 {
     width: 100%;
     display: block;
     margin-top: -10rem;
-    margin-bottom: 5.5rem;
+    margin-bottom: 6.5rem;
     z-index: 1;
     text-align: center;
 }
@@ -161,8 +161,11 @@ main section {
 .spotlight {
     justify-content: center;
     background: var(--light-neutral);
-    margin-top: 0;
-    padding-top: 20px;
+    padding: 4rem 1rem;
+}
+
+.spotlight {
+    margin-bottom: 0;
 }
 
 .info img,
@@ -189,8 +192,103 @@ main section {
 }
 
 .weather {
-    display: block;
     text-align: center;
+    display: grid;
+    grid: 1fr auto;
+    max-width: 500px;
+    margin: 4rem auto;
+    border: 2px solid var(--dark-neutral);
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.weather h2 {
+    grid-column: 1 / 3;
+}
+
+.current {
+    grid-column: 1 / 2;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: 55px auto;
+    grid-template-rows: .25fr .25fr .25fr .25fr .25fr .25fr .25fr .25fr .25fr;
+    background: rgba(var(--light-neutral-rgb), 0.6);
+    border: 4px solid white;
+    padding: 10px;
+}
+
+.current h3,
+.forecast h3 {
+    font-weight: bold;
+    color: var(--very-dark-neutral);
+    font-size: 1.5em;
+}
+
+.forecast {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 55px 55px auto;
+    background: rgba(var(--light-neutral-rgb), 0.6);
+    border: 4px solid white;
+    padding: 10px;
+}
+
+.current h3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.forecast h3 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.current img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0;
+    align-self: center;
+}
+
+.forecast img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0;
+    align-self: center;
+}
+
+.current span {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: bold;
+    font-size: larger;
+    align-self: center;
+    text-align: left;
+}
+
+.forecast span {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: bold;
+    font-size: larger;
+    align-self: center;
+}
+
+.current figcaption {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    align-self: top;
+    text-align: center;
+    padding: 0px;
+}
+
+.forecast figcaption {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: center;
+    text-align: left;
+    padding: 5px;
 }
 
 footer {
