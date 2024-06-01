@@ -51,19 +51,19 @@ const displayMembers = (members) => {
         category.textContent = `Category: ${member.category}`;
 
         // define logo image attributes
-        logo.setAttribute("src", member.img);
+        logo.setAttribute("src", member.logo.url);
         logo.setAttribute("alt", `Logo for ${member.business}`);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "350");
-        logo.setAttribute("height", "450");
+        logo.setAttribute("width", member.logo.width);
+        logo.setAttribute("height", member.logo.height);
 
         // append elements to the document
         address.appendChild(street);
         address.appendChild(csz);
 
-        card.appendChild(business);
-        card.appendChild(document.createElement("br"));
         card.appendChild(logo);
+        card.appendChild(document.createElement("br"));
+        card.appendChild(business);
         card.appendChild(document.createElement("br"));
         card.appendChild(address);
         card.appendChild(document.createElement("br"));
