@@ -353,7 +353,7 @@ input::placeholder {
 
 /* ------------ Directory --------------- */
 #directory h2 {
-    margin-top: 2rem;
+    margin-top: .25rem;
 }
 
 #directory .menu {
@@ -366,6 +366,17 @@ input::placeholder {
     background: var(--dark-neutral);
     color: white;
     border-radius: 10px;
+}
+
+#mem-name,
+#mem-address,
+#mem-phone,
+#mem-web,
+#mem-email,
+#mem-type,
+#mem-category {
+    display: block;
+    padding: 5px;
 }
 
 .grid {
@@ -384,9 +395,16 @@ input::placeholder {
 }
 
 .grid img {
-    padding: 1rem;
-    margin: 0;
+    display: block;
+    padding: .5rem 0;
+    margin: 0 auto;
     text-align: center;
+}
+
+.grid #mem-type,
+.grid #mem-category {
+    text-align: right;
+    text-transform: capitalize;
 }
 
 .list {
@@ -395,9 +413,16 @@ input::placeholder {
     margin: 1rem 0;
 }
 
+.list #mem-logo,
+.list #mem-email,
+.list #mem-type,
+.list #mem-category {
+    display: none;
+}
+
 .list .card {
     display: grid;
-    grid-template-columns: 1.5fr 1.25fr 1.3fr .7fr;
+    grid-template-columns: 1.5fr 1.5fr .8fr;
     margin: 0;
     padding: 1rem .5rem;
 }
@@ -406,15 +431,6 @@ input::placeholder {
     margin: 0 1rem;
 }
 
-.list .card img,
-.list br {
-    display: none;
-}
-
 .list section:nth-child(odd) {
     background: rgba(var(--light-neutral-rgb), 0.6);
-}
-
-.list address {
-    padding-bottom: 10px;
 }

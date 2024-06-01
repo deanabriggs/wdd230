@@ -38,17 +38,24 @@ const displayMembers = (members) => {
         // set element properties & values
         card.setAttribute("class", "card");
         business.textContent = member.business;
+        business.id = "mem-name";
+        address.id = "mem-address";
         street.textContent = member.address.street;
         let compoundCSZ = `${member.address.city}, ${member.address.state} ${member.address.zip}`;
         csz.textContent = compoundCSZ;
         phone.setAttribute("href", `tel:${member.phone}`);
         phone.textContent = member.phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+        phone.id = "mem-phone";
         email.setAttribute("href", `mailto:${member.email}`);
         email.textContent = member.email;
+        email.id = "mem-email";
         website.setAttribute("href", member.website);
         website.textContent = "Go to website";
+        website.id = "mem-web";
         membership.textContent = `Membership: ${member.membership}`;
-        category.textContent = `Category: ${member.category}`;
+        membership.id = "mem-type";
+        category.textContent = `${member.category}`;
+        category.id = "mem-category";
 
         // define logo image attributes
         logo.setAttribute("src", member.logo.url);
@@ -56,28 +63,22 @@ const displayMembers = (members) => {
         logo.setAttribute("loading", "lazy");
         logo.setAttribute("width", member.logo.width);
         logo.setAttribute("height", member.logo.height);
+        logo.id = "mem-logo";
 
         // append elements to the document
         address.appendChild(street);
         address.appendChild(csz);
 
-        card.appendChild(logo);
-        card.appendChild(document.createElement("br"));
-        card.appendChild(business);
-        card.appendChild(document.createElement("br"));
-        card.appendChild(address);
-        card.appendChild(document.createElement("br"));
-        card.appendChild(phone);
-        card.appendChild(document.createElement("br"));
-        card.appendChild(website);
-        card.appendChild(document.createElement("br"));
-        card.appendChild(email);
-        card.appendChild(document.createElement("br"));
-        card.appendChild(membership);
-        card.appendChild(document.createElement("br"));
-        card.appendChild(category);
+        card.appendChild(logo);         // #mem-logo
+        card.appendChild(business);     // #mem-name
+        card.appendChild(address);      // #mem-address
+        card.appendChild(phone);        // #mem-phone
+        card.appendChild(website);      // #mem-web
+        card.appendChild(email);        // #mem-email
+        card.appendChild(membership);   // #mem-type
+        card.appendChild(category);     // #mem-category
 
-        docMembers.appendChild(card);
+        docMembers.appendChild(card);   // .card
 
     });
 }
