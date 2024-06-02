@@ -172,18 +172,23 @@ input[type="submit"] {
 }
 
 .info img {
-    border: 2px solid var(--very-dark-neutral);
     background: white;
-    margin: 15px auto;
+    margin: 0 auto;
     border-radius: 50%;
     display: block;
     align-self: center;
+    box-shadow: 4px 4px 6px black;
 }
 
 .info p {
     line-height: 1.5rem;
     margin-top: 15px;
     font-size: large;
+}
+
+.info div {
+    box-shadow: 4px 4px 6px black;
+    margin: 0 3rem;
 }
 
 .info div,
@@ -195,8 +200,8 @@ input[type="submit"] {
     background: var(--dark-neutral);
     color: white;
     margin: 15px;
-    border: 2px solid black;
     border-radius: 5px;
+    max-width: 300px;
 }
 
 .events li {
