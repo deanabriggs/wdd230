@@ -208,7 +208,6 @@ input[type="submit"] {
 .weather {
     text-align: center;
     display: grid;
-    grid: 1fr auto;
     max-width: 500px;
     margin: 5rem auto 10rem auto;
     border: 2px solid var(--dark-neutral);
@@ -292,7 +291,6 @@ input[type="submit"] {
 .current figcaption {
     grid-column: 1/3;
     grid-row: 3/4;
-    align-self: top;
     text-align: center;
     padding: 0px;
 }
