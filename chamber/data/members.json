@@ -17,7 +17,8 @@
                 "height": "100"
             },
             "membership": "gold",
-            "category": "Shopping"
+            "category": "Shopping",
+            "advertisement": "Get an Extra 10% off purchases if you are a Chamber Member"
         },
         {
             "business": "Bounty Hunters Grind & Grill",
@@ -36,7 +37,8 @@
                 "height": "100"
             },
             "membership": "silver",
-            "category": "Restaurant"
+            "category": "Restaurant",
+            "advertisement": "Dessert is on us Monday nights! Have dinner and save room for sweets! One free dessert for each purchased dinner after 5pm."
         },
         {
             "business": "Byers Gymnastics Center",
@@ -55,7 +57,8 @@
                 "height": "100"
             },
             "membership": "silver",
-            "category": "Sports & Recreation"
+            "category": "Sports & Recreation",
+            "advertisement": "One free practice session. Call us to schedule with one of our amazing instructors."
         },
         {
             "business": "Costa Vida Fresh Mexican Grill",
@@ -74,7 +77,8 @@
                 "height": "100"
             },
             "membership": "gold",
-            "category": "Restaurant"
+            "category": "Restaurant",
+            "advertisement": "Kids eat free Tuesdays all summer long. With the purchase of one adult meal, get one kid's meal free. Available for kids 10 and under."
         },
         {
             "business": "Denio's Roseville Farmers Market",
@@ -93,7 +97,8 @@
                 "height": "100"
             },
             "membership": "bronze",
-            "category": "Shopping"
+            "category": "Shopping",
+            "advertisement": ""
         },
         {
             "business": "Landscape & Tree Company",
@@ -112,7 +117,8 @@
                 "height": "100"
             },
             "membership": "silver",
-            "category": "Home Improvement"
+            "category": "Home Improvement",
+            "advertisement": "It's time to freshen up your landscaping.  Call or email us for a free consultation. Keep your yard looking great all year round!  Chamber members get an extra 15% Off."
         },
         {
             "business": "Secure and Alert Systems Corp",
@@ -131,7 +137,8 @@
                 "height": "100"
             },
             "membership": "gold",
-            "category": "Home Improvement"
+            "category": "Home Improvement",
+            "advertisement": "What goes on when you're not home? Need cameras or alarm security? Schedule a free consultation. Chamber members get an extra 15% discount."
         },
         {
             "business": "Steve Wallen Swim School",
@@ -150,7 +157,8 @@
                 "height": "85"
             },
             "membership": "bronze",
-            "category": "Sports & Recreation"
+            "category": "Sports & Recreation",
+            "advertisement": ""
         }
     ]
 }

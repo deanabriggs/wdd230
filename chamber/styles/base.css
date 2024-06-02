@@ -196,7 +196,7 @@ main section {
     display: grid;
     grid: 1fr auto;
     max-width: 500px;
-    margin: 4rem auto;
+    margin: 5rem auto;
     border: 2px solid var(--dark-neutral);
     padding: 5px;
     border-radius: 5px;
@@ -221,8 +221,8 @@ main section {
 .current h3,
 .forecast h3 {
     font-weight: bold;
-    color: var(--very-dark-neutral);
-    font-size: 1.5em;
+    font-size: 1.3em;
+    color: var(--medium-accent);
 }
 
 .forecast {
