@@ -28,26 +28,36 @@
         font-size: larger;
     }
 
-
-    .info,
-    .spotlight {
+    .info {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        background: var(--light-neutral);
     }
 
-    .info h2,
-    .spotlight h2 {
+    .info h2 {
         grid-column: 1 / 4;
-    }
-
-    .spotlight div {
-        grid-column: 2 / 4;
     }
 
     #menu {
         display: none;
+    }
+
+
+    /*---------------SPOTLIGHT-----------------*/
+    .gold,
+    .silver {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .gold img,
+    .silver img {
+        grid-column: 1/2;
+        grid-row: 1/4;
+        display: block;
+        margin: 0 auto;
+        padding: 0 25px 0 0;
+        align-self: center;
     }
 
     /* Discover Page Adjustments */

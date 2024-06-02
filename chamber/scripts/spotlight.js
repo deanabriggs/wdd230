@@ -1,6 +1,6 @@
 const baseURL = "https://deanabriggs.github.io/wdd230/chamber/";
 const membersURL = "https://deanabriggs.github.io/wdd230/chamber/data/members.json";
-const spotlight = document.querySelector("#spotlight");
+const spotlight = document.querySelector(".spotlight");
 
 async function getMembers() {
     try {
@@ -8,7 +8,7 @@ async function getMembers() {
         if (response.ok) {
             const data = await response.json();
             // console.log(data);
-            displayMembers(data.members);
+            displaySpotlight(data.members);
         }
         else {
             throw Error(await response.text());
@@ -18,37 +18,31 @@ async function getMembers() {
     }
 }
 
-const displayMembers = (members) => {
+const displaySpotlight = (members) => {
     // create elements that for document
     const gold = document.createElement("div");
     const silver = document.createElement("div");
 
     // set class attributes for the document elements
-    gold.className, "gold";
-    silver.className, "silver";
+    gold.className = "gold";
+    silver.className = "silver";
 
     // create lists for valid members based on type
     const golds = [];
     const silvers = [];
 
-    let i = 0;
     members.forEach(member => {
-
-        if (member.membership == "gold") {
-            golds.add(i);
-            i++;
+        if (member.membership.toLowerCase() == "gold") {
+            golds.push(member);
         }
-        else if (member.membership == "silver") {
-            silvers.add(i);
-            i++;
+        else if (member.membership.toLowerCase() == "silver") {
+            silvers.push(member);
         }
-        i++;
     });
 
+    // POPULATE FOR GOLD MEMBERS
     // pull a random index number with the correct criteria
-    const randomGold = Math.floor(Math.random(golds));
-    const randomSilver = Math.floor(Math.random(silvers));
-    console.log(golds);
+    const randomGold = golds[Math.floor(Math.random() * golds.length)];
     console.log(randomGold);
 
     // create document elements for each card
@@ -58,25 +52,56 @@ const displayMembers = (members) => {
     const goldAdv = document.createElement("p");
 
     // set element properties & values
-    goldBus.textContent = member.business;
-    goldWeb.setAttribute("href", member.website);
-    goldWeb.textContent = "website";
+    goldBus.textContent = randomGold.business;
+    goldWeb.setAttribute("href", randomGold.website);
+    goldWeb.textContent = "Go to website";
+    goldAdv.textContent = randomGold.advertisement;
 
     // define logo image attributes
-    logo.setAttribute("src", member.logo.url);
-    logo.setAttribute("alt", `Logo for ${member.business}`);
-    logo.setAttribute("loading", "lazy");
-    logo.setAttribute("width", member.logo.width);
-    logo.setAttribute("height", member.logo.height);
-    logo.id = "mem-logo";
+    goldLogo.setAttribute("src", randomGold.logo.url);
+    goldLogo.setAttribute("alt", `Logo for ${randomGold.business}`);
+    goldLogo.setAttribute("loading", "lazy");
+    goldLogo.setAttribute("width", randomGold.logo.width);
+    goldLogo.setAttribute("height", randomGold.logo.height);
 
     // append elements to the document
-    card.appendChild(logo);         // #mem-logo
-    card.appendChild(business);     // #mem-name
-    card.appendChild(website);      // #mem-web
+    gold.appendChild(goldLogo);     // .gold img
+    gold.appendChild(goldBus);      // .gold h3
+    gold.appendChild(goldWeb);      // .gold a
+    gold.appendChild(goldAdv);      // .gold p
 
-    docMembers.appendChild(card);   // .card
+    spotlight.appendChild(gold);    // .gold
 
+    // POPULATE FOR SILVER MEMBERS
+    // pull a random index number with the correct criteria
+    const randomSilver = silvers[Math.floor(Math.random() * silvers.length)];
+    console.log(randomGold);
 
+    // create document elements for each card
+    const silverBus = document.createElement("h3");
+    const silverLogo = document.createElement("img");
+    const silverWeb = document.createElement("a");
+    const silverAdv = document.createElement("p");
+
+    // set element properties & values
+    silverBus.textContent = randomSilver.business;
+    silverWeb.setAttribute("href", randomSilver.website);
+    silverWeb.textContent = "Go to website";
+    silverAdv.textContent = randomSilver.advertisement;
+
+    // define logo image attributes
+    silverLogo.setAttribute("src", randomSilver.logo.url);
+    silverLogo.setAttribute("alt", `Logo for ${randomSilver.business}`);
+    silverLogo.setAttribute("loading", "lazy");
+    silverLogo.setAttribute("width", randomSilver.logo.width);
+    silverLogo.setAttribute("height", randomSilver.logo.height);
+
+    // append elements to the document
+    silver.appendChild(silverLogo);     // .silver img
+    silver.appendChild(silverBus);      // .silver h3
+    silver.appendChild(silverWeb);      // .silver a
+    silver.appendChild(silverAdv);      // .silver p
+
+    spotlight.appendChild(silver);      // .silver
 }
 getMembers();
