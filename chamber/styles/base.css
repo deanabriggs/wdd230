@@ -174,10 +174,16 @@ input[type="submit"] {
 .info img {
     border: 2px solid var(--very-dark-neutral);
     background: white;
-    width: 20rem;
-    height: 15rem;
-    margin: 15px;
-    border-radius: 5px;
+    margin: 15px auto;
+    border-radius: 50%;
+    display: block;
+    align-self: center;
+}
+
+.info p {
+    line-height: 1.5rem;
+    margin-top: 15px;
+    font-size: large;
 }
 
 .info div,
@@ -193,13 +199,18 @@ input[type="submit"] {
     border-radius: 5px;
 }
 
+.events li {
+    margin-top: 15px;
+    line-height: .8rem;
+}
+
 /* -------------- WEATHER on HOME page ----------------*/
 .weather {
     text-align: center;
     display: grid;
     grid: 1fr auto;
     max-width: 500px;
-    margin: .5rem auto 4rem auto;
+    margin: 5rem auto 10rem auto;
     border: 2px solid var(--dark-neutral);
     padding: 5px;
     border-radius: 5px;

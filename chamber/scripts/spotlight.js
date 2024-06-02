@@ -7,7 +7,6 @@ async function getMembers() {
         const response = await fetch(membersURL);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
             displaySpotlight(data.members);
         }
         else {
@@ -43,7 +42,6 @@ const displaySpotlight = (members) => {
     // POPULATE FOR GOLD MEMBERS
     // pull a random index number with the correct criteria
     const randomGold = golds[Math.floor(Math.random() * golds.length)];
-    console.log(randomGold);
 
     // create document elements for each card
     const goldBus = document.createElement("h3");
@@ -75,7 +73,6 @@ const displaySpotlight = (members) => {
     // POPULATE FOR SILVER MEMBERS
     // pull a random index number with the correct criteria
     const randomSilver = silvers[Math.floor(Math.random() * silvers.length)];
-    console.log(randomGold);
 
     // create document elements for each card
     const silverBus = document.createElement("h3");

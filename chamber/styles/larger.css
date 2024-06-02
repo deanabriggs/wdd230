@@ -31,11 +31,11 @@
     .info {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
     }
 
     .info h2 {
         grid-column: 1 / 4;
+        padding-bottom: 3rem;
     }
 
     #menu {
