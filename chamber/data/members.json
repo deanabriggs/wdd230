@@ -53,7 +53,7 @@
             "website": "https://byersgym.com/",
             "logo": {
                 "url": "https://byersgym.com/wp-content/uploads/2019/11/cropped-Byers-Gymnastics-Center-Logo-1.png",
-                "width": "95",
+                "width": "90",
                 "height": "100"
             },
             "membership": "silver",
@@ -154,7 +154,7 @@
             "logo": {
                 "url": "https://wallenswim.com/wp-content/uploads/2018/02/Wallen_Swim_School_Logo_01.png",
                 "width": "275",
-                "height": "85"
+                "height": "75"
             },
             "membership": "bronze",
             "category": "Sports & Recreation",
