@@ -376,7 +376,7 @@ footer {
 /* -------------Discover Page Adjustments------------- */
 aside {
     background: var(--light-neutral);
-    padding: 20px;
+    padding: 3rem;
 }
 
 aside li {
@@ -387,6 +387,10 @@ aside li {
 
 aside p {
     padding: 2px;
+}
+
+aside h3 {
+    margin-top: 1rem;
 }
 
 .discover-pics div {
@@ -407,6 +411,11 @@ aside p {
     font-size: larger;
     padding: 10px;
     opacity: 80%;
+}
+
+.discover-pics img {
+    width: 100%;
+    height: auto;
 }
 
 /* -------------Join Page Adjustments------------- */
