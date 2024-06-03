@@ -173,7 +173,7 @@ input[type="submit"] {
 
 .info img {
     background: white;
-    margin: 0 auto;
+    margin: 2rem auto;
     border-radius: 50%;
     display: block;
     align-self: center;
@@ -188,7 +188,7 @@ input[type="submit"] {
 
 .info div {
     box-shadow: 4px 4px 6px black;
-    margin: 0 3rem;
+    margin: 2rem 2rem 0 2rem;
 }
 
 .info div,
@@ -363,6 +363,12 @@ input[type="submit"] {
     line-height: 1.5em;
 }
 
+.gold a,
+.silver a {
+    padding-top: .6rem;
+    display: block;
+}
+
 
 /*----------------HOME page FOOTER --------------------------*/
 footer {
@@ -375,8 +381,8 @@ footer {
 
 /* -------------Discover Page Adjustments------------- */
 aside {
-    background: var(--light-neutral);
-    padding: 3rem;
+    background: rgba(var(--light-neutral-rgb), 0.4);
+    padding: 2rem;
 }
 
 aside li {
@@ -522,14 +528,14 @@ input::placeholder {
 }
 
 #asideJoin div {
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 #asideJoin h3 {
     color: var(--medium-accent);
     font-weight: 600;
     font-size: 140%;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
 }
 
 /* ------------ Directory --------------- */

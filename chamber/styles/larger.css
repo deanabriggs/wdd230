@@ -79,6 +79,12 @@
         cursor: pointer;
     }
 
+    aside {
+        padding: 3rem;
+    }
+
+    /* Join Page Adjustments */
+
     .pgJoin main {
         display: grid;
         grid-template-columns: 1fr 3fr;
